@@ -6,6 +6,45 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.comments {
+    background-color: #e3ffd3;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 30px;
+}
+.comments h3 {
+    font-size: 16px;
+    text-transform: none;
+    margin: 0;
+}
+.comments p{
+    font-family: 'helvetica';
+    font-size: 14px;
+    margin: 0;
+    padding-top: 5px;
+}
+.bold {
+    font-weight: bold;
+}
+.margin {
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+.margin-top {
+    margin-top: 50px;
+}
+.margin-auto {
+    margin: auto;
+}
+.space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-details {
+    text-align: center; 
+    font-size: 12px; 
+    margin: 30px;
+}
 .keywords {
     color:#cccccc;
     font-size:1px;
@@ -439,8 +478,8 @@ nav .caret {
 }
 
 .mg-md {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .mg-lg {
@@ -537,6 +576,8 @@ a[data-lightbox] {
     position: relative;
     display: block;
     text-align: center;
+    margin: auto;
+    max-width: 320px;
 }
 
 a[data-lightbox]:hover::before {
@@ -553,10 +594,10 @@ a[data-lightbox]:hover::before {
     z-index: 1;
     position: absolute;
     top: 50%;
+    left: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
-
 a[data-lightbox]:hover img {
     opacity: 0.6;
     -webkit-animation-fill-mode: none;
@@ -679,12 +720,10 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 11px;
-}
+
 
 .tight-width-whitespace {
-    max-width: 600px;
+    max-width: 650px;
     margin: auto auto auto auto;
 }
 
@@ -825,7 +864,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
