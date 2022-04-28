@@ -1437,7 +1437,7 @@ img {
 .thumbnail>img {
     display: block;
     max-width: 100%;
-    height: auto
+    max-height: 100%;
 }
 .img-responsive {
     display: inline;
@@ -2071,6 +2071,14 @@ pre code {
 }
 .col-sm-6 {
     margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+    .center-content {
+        left: 25%;
+    }
+}
+footer p {
+    margin-bottom: 15px;
 }
 
 .col-xs-1,
@@ -3230,6 +3238,9 @@ input[type=search] {
 
 .form-group {
     margin-bottom: 15px
+}
+.form-group label {
+    width: 100%;
 }
 
 .checkbox,
